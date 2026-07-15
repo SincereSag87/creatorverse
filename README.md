@@ -1,16 +1,52 @@
-# React + Vite
+# 🌟 Creatorverse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Creatorverse is a React CRUD application that allows users to discover and manage their favorite programming content creators.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- View all creators
+- Add new creators
+- Edit creator information
+- Delete creators
+- View creator details
+- Responsive design
+- Supabase backend
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router
+- Supabase
+- CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+
+```bash
+git clone https://github.com/SincereSag87/creatorverse.git
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Create a `.env.local`
+
+```env
+VITE_SUPABASE_URL=your_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_key
+```
+
+4. Run the application
+
+```bash
+npm run dev
+```
+
+## Author
+
+Raymond Wannamaker
