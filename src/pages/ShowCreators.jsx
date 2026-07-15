@@ -24,16 +24,19 @@ function ShowCreators() {
   return (
     <div>
       <h2>All Creators</h2>
+      <p>Discover some of the best programming creators on YouTube.</p>
 
       {creators.length === 0 ? (
         <p>No creators have been added yet.</p>
       ) : (
-        creators.map((creator) => (
-          <CreatorCard
-            key={creator.id}
-            creator={creator}
-          />
-        ))
+        <div className="creator-grid">
+          {creators.map((creator) => (
+            <CreatorCard
+              key={creator.id}
+              creator={creator}
+            />
+          ))}
+        </div>
       )}
     </div>
   )

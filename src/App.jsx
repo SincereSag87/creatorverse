@@ -27,18 +27,24 @@ function App() {
 
   return (
     <div className="app">
-      <header>
-        <Link to="/" className="site-title">
-          🌟 Creatorverse
-        </Link>
+      <header className="header">
 
-        <nav style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+        <div className="logo-section">
+          <Link to="/" className="site-title">
+            🌟 Creatorverse
+          </Link>
+        </div>
+
+        <nav className="navbar">
           <Link to="/">All Creators</Link>
           <Link to="/creators/new">Add Creator</Link>
         </nav>
+
       </header>
 
-      <main>{routes}</main>
+      <main>
+        {routes}
+      </main>
     </div>
   )
 }

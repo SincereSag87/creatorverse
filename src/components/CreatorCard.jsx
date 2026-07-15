@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom'
 
 function CreatorCard({ creator }) {
   return (
-    <div
-      style={{
-        border: '1px solid white',
-        padding: '20px',
-        marginBottom: '20px'
-      }}
-    >
+    <div className="creator-card">
+      {creator.imageURL && (
+        <img
+          src={creator.imageURL}
+          alt={creator.name}
+          className="creator-image"
+        />
+      )}
+
       <h2>{creator.name}</h2>
 
       <p>{creator.description}</p>
