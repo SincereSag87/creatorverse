@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../client'
+import CreatorCard from '../components/CreatorCard'
 
 function ShowCreators() {
-  const [creators, setCreators] =useState([])
+  const [creators, setCreators] = useState([])
 
   useEffect(() => {
     async function fetchCreators() {
@@ -28,20 +29,10 @@ function ShowCreators() {
         <p>No creators have been added yet.</p>
       ) : (
         creators.map((creator) => (
-          <div key={creator.id}>
-            <h3>{creator.name}</h3>
-            <p>{creator.description}</p>
-
-            <a
-              href={creator.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Visit Channel
-            </a>
-
-            <hr />
-          </div>
+          <CreatorCard
+            key={creator.id}
+            creator={creator}
+          />
         ))
       )}
     </div>
